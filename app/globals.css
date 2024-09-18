@@ -1,27 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 10px;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  font-family: "Blinker", sans-serif;
+}
+
+.css-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-areas: "one two three" "one two four";
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.3rem;
+  margin-top: 1.3rem;
+  height: 50rem;
+}
+
+@media (max-width:768px) {
+  .grid-box {
+    grid-template-areas: "one two" "three four";
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+}
+
+@media (max-width:567px) {
+  .grid-box {
+    grid-template-areas: "one" "two" "three" "four";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+  }
+
+  .grid-box a {
+    height: 300px;
+  }
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+button,
+input {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.trend::-webkit-scrollbar {
+  display: none;
+}
+
+.show-cart {
+  right: 0 !important;
+}
+
+.show-nav {
+  left: 0 !important;
 }
