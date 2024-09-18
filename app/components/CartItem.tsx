@@ -13,7 +13,7 @@ const CartItem = ({ id, name, img, price, quantity }: Props) => {
   const { increaseCartQuantity, decreaseCartQuantity, removeFromCart } =
     useShoppingCart();
   return (
-    <div className="bg-[#f2f2f2] border border-[#717171] grid grid-cols-[30fr_50fr_20fr] max-xsm:grid-cols-1 max-xsm:h-full max-xsm:w-[90%] xsm:h-[15rem]">
+    <div className="bg-[#f2f2f2] border border-[#717171] grid grid-cols-[30fr_50fr_20fr] max-xsm:grid-cols-1 max-xsm:w-[90%] xsm:h-[15rem]">
       <div className="h-full w-full">
         <Image src={img} alt={name} className="w-full h-full object-cover" />
       </div>
