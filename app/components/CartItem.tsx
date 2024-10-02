@@ -18,7 +18,7 @@ const CartItem = ({ id, name, img, price, quantity }: Props) => {
         <Image src={img} alt={name} className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col max-xsm:items-center max-xsm:gap-[2rem] justify-between p-[1.5rem] h-full">
-        <h3 className="text-[2.4rem] font-normal leading-[normal]">{name}</h3>
+        <h3 className="text-[2.4rem] leading-[normal]">{name}</h3>
         <div className="border border-black flex w-fit p-[.1px]">
           <button
             onClick={() => decreaseCartQuantity(id)}

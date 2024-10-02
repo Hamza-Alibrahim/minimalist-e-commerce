@@ -21,7 +21,7 @@ const ShopNow = ({ title, image, reverse }: Props) => {
             <h1 className="text-[3.2rem] font-semibold leading-[normal] mb-[1.5rem]">
               {title}
             </h1>
-            <p className="text-[1.8rem] font-normal">
+            <p className="text-[1.8rem] ">
               RAOUF Products are all made to standard sizes so that you can mix
               and match them freely.
             </p>

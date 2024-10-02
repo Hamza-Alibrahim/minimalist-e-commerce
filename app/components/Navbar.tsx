@@ -15,27 +15,23 @@ const Navbar = () => {
   const [fixed, setFixed] = useState(false);
   const [show, setShow] = useState(false);
   const [expand, setExpand] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = function () {
       if (window.scrollY > 50 && !fixed) setFixed(true);
       else if (window.scrollY <= 50 && fixed) setFixed(false);
-    });
-
-    window.addEventListener("resize", (e) => {
+    };
+    const handleResize = function (e: UIEvent) {
       const x = e.currentTarget as Target | null;
       if (x!.innerWidth > 900 && expand) setExpand(false);
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", () => {
-        if (window.scrollY > 50 && !fixed) setFixed(true);
-        else if (window.scrollY <= 50 && fixed) setFixed(false);
-      });
-
-      window.removeEventListener("resize", (e) => {
-        const x = e.currentTarget as Target | null;
-        if (x!.innerWidth > 900 && expand) setExpand(false);
-      });
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   });
   return (
@@ -52,7 +48,7 @@ const Navbar = () => {
           <nav className={`flex gap-[2.5rem]`}>
             <div
               className={`flex gap-[2.5rem] max-sm:bg-white max-sm:absolute max-sm:left-[-100rem] max-sm:top-0 max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:w-screen max-sm:h-screen transition-[left] duration-500 ${
-                expand ? "show-nav z-10" : ""
+                expand ? "!left-0 z-10" : ""
               }`}
             >
               <span
@@ -76,13 +72,13 @@ const Navbar = () => {
                 </svg>
               </span>
               <Link
-                className="text-[1.8rem] max-sm:text-[3rem] font-normal uppercase hover:underline"
+                className="text-[1.8rem] max-sm:text-[3rem] uppercase hover:underline"
                 href="/categories/all"
               >
                 categories
               </Link>
               <Link
-                className="text-[1.8rem] max-sm:text-[3rem] font-normal uppercase hover:underline"
+                className="text-[1.8rem] max-sm:text-[3rem] uppercase hover:underline"
                 href="/categories/product/19"
               >
                 product page

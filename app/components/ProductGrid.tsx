@@ -16,10 +16,7 @@ const ProductGrid = ({ slug }: Props) => {
       <div className="css-container">
         <div className="pt-[17rem]">
           <div className="flex items-center mb-[6rem]">
-            <Link
-              className="text-[1.6rem] font-normal flex items-center"
-              href="/"
-            >
+            <Link className="text-[1.6rem]  flex items-center" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -42,37 +39,37 @@ const ProductGrid = ({ slug }: Props) => {
           </div>
           <div className="flex justify-center gap-[1rem] whitespace-nowrap flex-wrap">
             <Link href="/categories/all">
-              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] font-normal">
+              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] ">
                 All
               </button>
             </Link>
             <Link href="/categories/furnitures">
-              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] font-normal">
+              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] ">
                 Furnitures
               </button>
             </Link>
             <Link href="/categories/electronics">
-              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] font-normal">
+              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] ">
                 Electronics
               </button>
             </Link>
             <Link href="/categories/lamps">
-              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] font-normal">
+              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] ">
                 Lamps
               </button>
             </Link>
             <Link href="/categories/kitchen">
-              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] font-normal">
+              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] ">
                 Kitchen
               </button>
             </Link>
             <Link href="/categories/chairs">
-              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] font-normal">
+              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] ">
                 Chairs
               </button>
             </Link>
             <Link href="/categories/skin-care">
-              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] font-normal">
+              <button className="py-[.6rem] px-[1.6rem] bg-white border-2 border-[rgb(0,0,0,.3)] hover:border-[rgb(0,0,0,.5)] transition-colors duration-300 text-[1.3rem] ">
                 Skin Care
               </button>
             </Link>

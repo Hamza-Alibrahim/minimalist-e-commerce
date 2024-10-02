@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import React from "react";
 import Image from "next/image";
 import empty from "../imgs/empty.png";
 import { useShoppingCart } from "../context/ShoppingCartProvider";
@@ -21,7 +21,7 @@ const ShoppingCart = ({ show, setShow }: Props) => {
       ></div>
       <div
         className={`fixed transition-[right_width] duration-[.4s] top-0 right-[-100rem] h-screen w-[50rem] max-sm:w-full bg-white pt-[3rem] px-[2.5rem] pb-[1.5rem] z-[100] ${
-          show && "show-cart"
+          show && "!right-0"
         }`}
       >
         <div className="flex justify-between items-center">
@@ -54,7 +54,7 @@ const ShoppingCart = ({ show, setShow }: Props) => {
               </p>
               <button
                 onClick={() => setShow(false)}
-                className="text-[1.7rem] font-normal leading-[normal] w-full h-[4.4rem] mt-[3rem] cursor-pointer border border-[#767676] rounded-[2px] transition-colors bg-[#e8e8e8] hover:bg-[#bcbec0]"
+                className="text-[1.7rem]  leading-[normal] w-full h-[4.4rem] mt-[3rem] cursor-pointer border border-[#767676] rounded-[2px] transition-colors bg-[#e8e8e8] hover:bg-[#bcbec0]"
               >
                 Keep Browsing
               </button>
@@ -86,7 +86,7 @@ const ShoppingCart = ({ show, setShow }: Props) => {
                     $
                   </p>
                 </div>
-                <span className="py-[1rem] px-[3.5rem] border-2 border-black text-[2rem] font-normal leading-[normal] transition-colors duration-200 hover:bg-black hover:text-white xsm:self-end cursor-pointer">
+                <span className="py-[1rem] px-[3.5rem] border-2 border-black text-[2rem]  leading-[normal] transition-colors duration-200 hover:bg-black hover:text-white xsm:self-end cursor-pointer">
                   Go to Checkout
                 </span>
               </div>

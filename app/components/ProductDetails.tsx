@@ -56,9 +56,7 @@ const ProductDetails = (product: Props) => {
             </div>
           </div>
           <div className="w-1/2 max-lg:w-full h-full pt-[3rem] pb-[4rem] px-[2rem] lg:pt-[16rem] lg:px-[5rem] lg:pb-[8rem] bg-[#e5e5e5]">
-            <p className="text-[2rem] font-normal mb-[5rem]">
-              {product.description}
-            </p>
+            <p className="text-[2rem]  mb-[5rem]">{product.description}</p>
             <div className="flex max-sm:flex-col max-sm:gap-[2rem] justify-between items-center mb-[5rem]">
               <span className="text-[2.5rem] font-semibold leading-[normal]">
                 Quantity
@@ -108,7 +106,7 @@ const ProductDetails = (product: Props) => {
             <h3 className="text-[2.2rem] font-semibold leading-[normal]">
               Texture:
             </h3>
-            <p className="text-[1.65rem] font-normal leading-[normal]">
+            <p className="text-[1.65rem]  leading-[normal]">
               {product.texture}
             </p>
           </div>
@@ -116,17 +114,13 @@ const ProductDetails = (product: Props) => {
             <h3 className="text-[2.2rem] font-semibold leading-[normal]">
               Weight:
             </h3>
-            <p className="text-[1.65rem] font-normal leading-[normal]">
-              {product.weight}
-            </p>
+            <p className="text-[1.65rem]  leading-[normal]">{product.weight}</p>
           </div>
           <div className="flex justify-between flex-col w-full p-[2rem] bg-[#e5e5e5]">
             <h3 className="text-[2.2rem] font-semibold leading-[normal]">
               Size:
             </h3>
-            <p className="text-[1.65rem] font-normal leading-[normal]">
-              {product.size}
-            </p>
+            <p className="text-[1.65rem]  leading-[normal]">{product.size}</p>
           </div>
         </div>
       </div>

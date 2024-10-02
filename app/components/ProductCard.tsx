@@ -23,9 +23,7 @@ const ProductCard = (product: Props) => {
           alt={product.name}
         />
         <div className="p-[1rem]">
-          <p className="text-[1.7rem] font-normal leading-[normal]">
-            {product.name}
-          </p>
+          <p className="text-[1.7rem]  leading-[normal]">{product.name}</p>
           <p className="text-[2.2rem] font-semibold leading-[normal] mt-[1.4rem]">
             {product.price}$
           </p>
